@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MyTextEdit.cs](./CS/Q212749'/MyTextEdit.cs) (VB: [MyTextEdit.vb](./VB/Q212749'/MyTextEdit.vb))
+<!-- default file list end -->
 # How to implement the IncrementalBackColor and IncrementalForeColor properties
 
 
