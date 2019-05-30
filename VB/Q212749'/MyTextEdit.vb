@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports DevExpress.XtraEditors
+﻿Imports DevExpress.XtraEditors
 Imports DevExpress.XtraEditors.Registrator
 Imports DevExpress.XtraEditors.ViewInfo
 Imports DevExpress.XtraEditors.Drawing
@@ -11,6 +10,7 @@ Imports DevExpress.Utils
 Namespace DXSample
 	Public Class MyTextEdit
 		Inherits TextEdit
+
 		Shared Sub New()
 			RepositoryItemMyTextEdit.RegisterMyTextEdit()
 		End Sub
@@ -25,7 +25,7 @@ Namespace DXSample
 			End Get
 		End Property
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Content)> _
+		<DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
 		Public Shadows ReadOnly Property Properties() As RepositoryItemMyTextEdit
 			Get
 				Return CType(MyBase.Properties, RepositoryItemMyTextEdit)
@@ -33,9 +33,10 @@ Namespace DXSample
 		End Property
 	End Class
 
-	<UserRepositoryItem("RegisterMyTextEdit")> _
+	<UserRepositoryItem("RegisterMyTextEdit")>
 	Public Class RepositoryItemMyTextEdit
 		Inherits RepositoryItemTextEdit
+
 		Shared Sub New()
 			RegisterMyTextEdit()
 		End Sub
@@ -52,6 +53,7 @@ Namespace DXSample
 			End Get
 		End Property
 
+'INSTANT VB NOTE: The field incrementalBackColor was renamed since Visual Basic does not allow fields to have the same name as other class members:
 		Private incrementalBackColor_Renamed As Color
 		Public Property IncrementalBackColor() As Color
 			Get
@@ -62,6 +64,7 @@ Namespace DXSample
 			End Set
 		End Property
 
+'INSTANT VB NOTE: The field incrementalForeColor was renamed since Visual Basic does not allow fields to have the same name as other class members:
 		Private incrementalForeColor_Renamed As Color
 		Public Property IncrementalForeColor() As Color
 			Get
@@ -94,6 +97,7 @@ Namespace DXSample
 
 	Public Class MyTextEditPainter
 		Inherits TextEditPainter
+
 		Public Sub New()
 			MyBase.New()
 		End Sub
